@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pc: hsla(203, 100%, 13%, 1);
+    --sc: hsla(330, 87%, 17%);
+    --fc: tomato;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    background-color: #f4f4f4;
+    font-size: 12px;
+
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  start nav bar */
+
+/*  start left sidebar */
+.leftsidebars {
+    background-color: #000;
+}
+
+.nav-item.nav-categories {
+    color: #fff;
+    opacity: 0.9;
+    margin: 10px 0;
+}
+.nav-item .sidebarlinks {
+    opacity: 0.9;
+
+    position: relative;
+}
+
+.nav-item .sidebarlinks:hover {
+    opacity: 1;
+    background-color: #666;
+}
+
+.nav-item .sidebarlinks .mores {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.sidebarlinks.currents {
+    background-color: #333;
+    box-shadow: 1px 0 5px #222;
+}
+/*  end left sidebar */
+
+/* start notify and user account */
+.dropdowns {
+    position: relative;
+}
+
+.dropdowns .dropdown-contents {
+    min-width: 230px;
+    background-color: #f6f6f6;
+
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+
+    display: none;
+}
+
+.dropdowns .dropdown-contents a {
+    color: #000;
+    display: block;
+
+    padding: 10px;
+}
+
+.dropdowns .dropdown-contents a:hover {
+    background-color: #ddd;
+}
+.dropdowns .dropdown-contents.show {
+    display: block;
+}
+
+.navbar .close-btns {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    line-height: 22px;
+    outline: none;
+    cursor: pointer;
+
+    margin-right: 3px;
+
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar .close-btns {
+        display: block;
+    }
+}
+
+/* end notify and user account */
+
+/*  end nav bar */
+
+/* start content area */
+
+/* start shortcut area */
+.border-left-primarys {
+    border-left: 3px solid steelblue;
+}
+
+.border-left-successes {
+    border-left: 3px solid green;
+}
+
+.border-left-infos {
+    border-left: 3px solid skyblue;
+}
+
+.border-left-warnings {
+    /* border-left: 3px solid orange; */
+
+    border-left-width: 3px;
+    border-left-color: orange;
+}
+
+/* end shortcut area */
+
+/* end content area */
