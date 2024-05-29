@@ -27,8 +27,81 @@ a {
     text-decoration: none;
 }
 
-/*  start nav bar */
+/* start right section */
+.sitesettings {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
 
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+
+    text-align: center;
+    line-height: 30px;
+
+    z-index: 100;
+}
+
+.sitesettings :hover {
+    opacity: 1;
+}
+
+.ani-rotates {
+    animation-name: myanirotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes myanirotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* end site section */
+
+/*  start right nav bar */
+.right-panels {
+    width: 200px;
+    min-height: 80vh;
+    background-color: #999;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    padding: 10px;
+    z-index: 200;
+
+    display: none;
+
+    transition: display 0.5s ease-in;
+}
+
+.right-panels h6 {
+    background-color: steelblue;
+    color: #fff;
+
+    padding: 10px;
+}
+
+.right-panels .themecolors {
+    column-count: 5;
+}
+
+body.show-nav > .right-panels {
+    display: block;
+}
+/*  start right nav bar */
+
+/*  start nav bar */
 /*  start left sidebar */
 .leftsidebars {
     background-color: #000;
@@ -118,11 +191,9 @@ a {
 }
 
 /* end notify and user account */
-
 /*  end nav bar */
 
 /* start content area */
-
 /* start shortcut area */
 .border-left-primarys {
     border-left: 3px solid steelblue;
@@ -144,5 +215,4 @@ a {
 }
 
 /* end shortcut area */
-
 /* end content area */

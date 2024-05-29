@@ -1,3 +1,13 @@
+//start right nav
+
+const getsitesetting = document.querySelector('#sitesettings');
+
+getsitesetting.addEventListener('click', function () {
+    document.body.classList.toggle('show-nav');
+});
+
+//end right nav
+
 // start navbar
 // start top nav bar
 
@@ -24,5 +34,14 @@ $(document).ready(function () {
 
     // end navbar
 });
+
+// Start footer
+
+const getyear = document.querySelector('#getyear');
+const getfullyear = new Date().getFullYear();
+
+getyear.innerText = getfullyear;
+
+// End footer
 
 // 21dd
