@@ -205,7 +205,7 @@
                                             <div class="input-group">
                                                 <input type="text" name="quicksearch" id="quicksearch" class="form-control border-0 shadow-none" placeholder="Search something..." />
                                                 <div class="input-group-append">
-                                                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                                    <button type="submit" class="btn btn-primary" data-bs-target="#quicksearchmodal" data-bs-toggle="modal"><i class="fas fa-search"></i></button>
                                                 </div>
                                             </div>
                                         </form>
@@ -1230,6 +1230,27 @@
         </div>
         <!-- end right nav section  -->
 
+        <!-- start modal section  -->
+        <div class="modal fade" id="quicksearchmodal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Result</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="javascript:void(0);">WDF 1001</a></li>
+                            <li class="list-group-item"><a href="javascript:void(0);">WDF 1002</a></li>
+                            <li class="list-group-item"><a href="javascript:void(0);">WDF 1003</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal section  -->
+
         <!-- bootstrap css1 js1 -->
         <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 
@@ -1254,3 +1275,5 @@
 <!-- 27PS -->
 
 <!-- 29CS -->
+
+<!-- 30FN -->
