@@ -35,6 +35,71 @@ $(document).ready(function () {
     // end navbar
 });
 
+//  start gauge area
+
+var gaugeusers = new JustGage({
+    id: 'gaugeusers', // the id of the html element
+    value: 50,
+    min: 0,
+    max: 100,
+    decimals: 2,
+    gaugeWidthScale: 0.6,
+});
+
+var gaugecustomers = new JustGage({
+    id: 'gaugecustomers', // the id of the html element
+    value: 50,
+    min: 0,
+    max: 100,
+    decimals: 2,
+    gaugeWidthScale: 0.6,
+});
+
+var gaugeemployees = new JustGage({
+    id: 'gaugeemployees', // the id of the html element
+    value: 50,
+    min: 0,
+    max: 100,
+    decimals: 2,
+    gaugeWidthScale: 0.6,
+});
+
+var gaugeinvestors = new JustGage({
+    id: 'gaugeinvestors', // the id of the html element
+    value: 50,
+    min: 0,
+    max: 100,
+    decimals: 2,
+    gaugeWidthScale: 0.6,
+});
+
+// update the value randomly
+setInterval(() => {
+    gaugeusers.refresh(Math.random() * 100);
+    gaugecustomers.refresh(Math.random() * 100);
+    gaugeemployees.refresh(Math.random() * 100);
+    gaugeinvestors.refresh(Math.random() * 100);
+}, 5000);
+
+// end gauge area
+
+//  start expenses area
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        datasets: [
+            {
+                data: [12, 19, 3],
+                borderWidth: 1,
+            },
+        ],
+    },
+    options: {},
+});
+//  end expenses area
+
 // start earning area
 
 google.charts.load('current', { packages: ['corechart'] });

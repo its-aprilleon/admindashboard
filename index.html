@@ -649,8 +649,8 @@
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <div class="">Animation chart</div>
+                                        <div class="col-auto">
+                                            <div id="gaugeusers"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -669,8 +669,8 @@
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <div class="">Animation chart</div>
+                                        <div class="col-auto">
+                                            <div id="gaugecustomers"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -689,8 +689,8 @@
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <div class="">Animation chart</div>
+                                        <div class="col-auto">
+                                            <div id="gaugeemployees"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -709,8 +709,8 @@
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <div class="">Animation chart</div>
+                                        <div class="col-auto">
+                                            <div id="gaugeinvestors"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -761,8 +761,8 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <div class="">
-                                            <p class="">Circle chart</p>
+                                        <div class="d-flex justify-content-center align-items-center" style="height: 250px">
+                                            <canvas id="myChart"></canvas>
                                         </div>
 
                                         <div class="small text-center mt-2">
@@ -1262,6 +1262,13 @@
         <!-- google chart js1 === https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/linechart.html -->
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+        <!-- chartjs js1 -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- Raphael must be included before justgage js1-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+
         <!-- lightbox css1 js1 -->
         <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js"></script>
 
@@ -1279,3 +1286,13 @@
 <!-- 29CS -->
 
 <!-- 30FN -->
+
+<!--
+    Notes 
+
+    google chart for line chart === https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery/linechart.html
+    chartjs for donut chart     === https://www.chartjs.org/docs/latest/getting-started/
+    justgage for gauge chart    === https://github.com/toorshia/justgage
+
+
+-->
